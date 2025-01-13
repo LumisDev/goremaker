@@ -31,6 +31,22 @@ pub fn main() !void {
     defer gctx.destroy(allocator);
     const shader_module = zgpu.createWgslShaderModule(gctx.device, shader_source, "shader module");
     defer shader_module.release();
+    const Vertex = struct {
+        position: [3]f32,
+    };
+    const vertex_attributes = [_]zgpu.wgpu.VertexAttribute{
+        .{
+            .format = .float32x3,
+            .offset = 0,
+            .shader_location = 0,
+        },
+    };
+    const vertex_buffer_layouts = [_]zgpu.wgpu.VertexBufferLayout{.{
+        .array_stride = @sizeOf(Vertex),
+        .attribute_count = vertex_attributes.len,
+        .attributes = &vertex_attributes,
+    }};
+    _ = vertex_buffer_layouts;
     while (!glfw.windowShouldClose(window)) {
         glfw.pollEvents();
     }
