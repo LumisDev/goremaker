@@ -23,25 +23,29 @@
     // Once all dependencies are fetched, `zig build` no longer requires
     // internet connectivity.
     .dependencies = .{
-        .zpool = .{
-            .url = "https://github.com/zig-gamedev/zpool/archive/820e0e59dc415d9784004464a6cf52223fbce126.tar.gz",
-            .hash = "1220e600a92d73dc8c3b5303351dcc67352114c975e59ae55de11b637ec173e75455",
-        },
-        .zstbi = .{
-            .url = "https://github.com/zig-gamedev/zstbi/archive/bcbd249f3f57fb84d6d76f1bc621c7bd3bfaa4a2.tar.gz",
-            .hash = "12208b7d15a730294a7d8ee3a9d3ef145e109f94d0a68be7f0ee282e0630ede093d5",
-        },
-        .zmath = .{
-            .url = "https://github.com/zig-gamedev/zmath/archive/24cdd20f9da09bd1ce7b552907eeaba9bafea59d.tar.gz",
-            .hash = "1220081d55b58b968d953db1afc2fb01b2f5733929144e69522461ce25fa6450d84e",
-        },
         .zgpu = .{
-            .url = "https://github.com/zig-gamedev/zgpu/archive/987809eff7cb47901192a6d41dc67486e3211f21.tar.gz",
-            .hash = "1220777b1f964f666f5e990412f34c7dd36b6c399ff15920754f842df297425dffa5",
+            .url = "https://github.com/zig-gamedev/zgpu/archive/refs/heads/main.tar.gz",
+            .hash = "1220e44b32228e968d57e32e2c6a72b80d39b6ebc8ecfbdc9b1d527f94e0b075f976",
         },
         .zglfw = .{
-            .url = "https://github.com/zig-gamedev/zglfw/archive/c45540455be3dde95f9d07e5519cbd1f975e32bf.tar.gz",
-            .hash = "1220fdbf17ba3351e6159874fc7b4e3cbe0513ddd8f3dae2d58b410404f9e7cddd26",
+            .url = "https://github.com/zig-gamedev/zglfw/archive/refs/heads/main.tar.gz",
+            .hash = "12200818d0bbd385df56eb519ca88ea473e668a7252e422beb9647a00aa619f776ea",
+        },
+        .zpool = .{
+            .url = "https://github.com/zig-gamedev/zpool/archive/refs/heads/main.tar.gz",
+            .hash = "1220e600a92d73dc8c3b5303351dcc67352114c975e59ae55de11b637ec173e75455",
+        },
+        .zmath = .{
+            .url = "https://github.com/zig-gamedev/zmath/archive/refs/heads/main.tar.gz",
+            .hash = "1220081d55b58b968d953db1afc2fb01b2f5733929144e69522461ce25fa6450d84e",
+        },
+        .zstbi = .{
+            .url = "https://github.com/zig-gamedev/zstbi/archive/refs/heads/main.tar.gz",
+            .hash = "12208b7d15a730294a7d8ee3a9d3ef145e109f94d0a68be7f0ee282e0630ede093d5",
+        },
+        .system_sdk = .{
+            .url = "https://github.com/zig-gamedev/system_sdk/archive/bf49d627a191e339f70e72668c8333717fb969b0.tar.gz",
+            .hash = "122047a9298c4c9dd43389d418d6826d469b192246ba0944102964cdc57f94c562df",
         },
         .dawn_x86_64_windows_gnu = .{
             .url = "https://github.com/michal-z/webgpu_dawn-x86_64-windows-gnu/archive/d3a68014e6b6b53fd330a0ccba99e4dcfffddae5.tar.gz",
