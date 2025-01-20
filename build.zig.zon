@@ -29,7 +29,7 @@
         },
         .zglfw = .{
             .url = "https://github.com/zig-gamedev/zglfw/archive/refs/heads/main.tar.gz",
-            .hash = "12200818d0bbd385df56eb519ca88ea473e668a7252e422beb9647a00aa619f776ea",
+            .hash = "1220aac39fd472cb7a70b1987249f3ac73799e702ff27516d799e1d5e566097f0a8b",
         },
         .zpool = .{
             .url = "https://github.com/zig-gamedev/zpool/archive/refs/heads/main.tar.gz",
@@ -37,7 +37,7 @@
         },
         .zmath = .{
             .url = "https://github.com/zig-gamedev/zmath/archive/refs/heads/main.tar.gz",
-            .hash = "1220081d55b58b968d953db1afc2fb01b2f5733929144e69522461ce25fa6450d84e",
+            .hash = "1220c1ab7d1e49106f59c6adb4004befdb95525a72056364a663757aaa1365aae64a",
         },
         .zstbi = .{
             .url = "https://github.com/zig-gamedev/zstbi/archive/refs/heads/main.tar.gz",
