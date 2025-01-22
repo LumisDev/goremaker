@@ -42,7 +42,6 @@ pub fn build(b: *std.Build) void {
     if (target.result.os.tag != .emscripten) {
       exe.linkLibrary(zgpu.artifact("zdawn"));
     }
-
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default
     // step when running `zig build`).

@@ -32,7 +32,7 @@ pub fn main() !void {
     const shader_module = zgpu.createWgslShaderModule(gctx.device, shader_source, "shader module");
     defer shader_module.release();
     const Vertex = struct {
-        position: [3]f32,
+        position: [2]f32,
     };
     const vertex_attributes = [_]zgpu.wgpu.VertexAttribute{
         .{
